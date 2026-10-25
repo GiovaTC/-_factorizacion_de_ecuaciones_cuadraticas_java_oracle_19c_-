@@ -161,8 +161,8 @@ public class Main extends JFrame {
 
         // Reemplaza estos valores por los datos de tu entorno Oracle.
         String url = "jdbc:oracle:thin:@localhost:1521/orcl";
-        String usuario = "TU_USUARIO";
-        String clave = "TU_CLAVE";
+        String usuario = "system";
+        String clave = "Tapiero123";    
 
         String sql = """
                 INSERT INTO FACTORIZACIONES
@@ -220,4 +220,4 @@ public class Main extends JFrame {
             new Main().setVisible(true);
         });
     }
-}   
+}
