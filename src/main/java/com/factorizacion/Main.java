@@ -49,7 +49,22 @@ public class Main extends JFrame {
         resultado.setEditable(false);
         resultado.setLineWrap(true);
         resultado.setWrapStyleWord(true);
-        resultado.setFont(new Font("Monospaced", Font.PLAIN, 14));  
+        resultado.setFont(new Font("Monospaced", Font.PLAIN, 14));
 
+        JPanel centro = new JPanel(new BorderLayout(10, 10));
+        centro.add(formulario, BorderLayout.NORTH);
+        centro.add(new JScrollPane(resultado), BorderLayout.CENTER);
+
+        principal.add(centro, BorderLayout.CENTER);
+        add(principal);
+
+        btnFactorizar.addActionListener(e -> factorizar());
+        btnGuardar.addActionListener(e -> guardarEnOracle());
+    }   
+
+    private void guardarEnOracle() {
+    }
+
+    private void factorizar() {
     }
 }
