@@ -27,7 +27,29 @@ public class Main extends JFrame {
         principal.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         JLabel titulo = new JLabel("FACTORIZACION DE ECUACIONES CUADRATICAS",SwingConstants.CENTER);
-        
+
+        titulo.setFont(new Font("Arial", Font.BOLD, 17));
+        principal.add(titulo, BorderLayout.NORTH);
+
+        JPanel formulario = new JPanel(new GridLayout(4, 2, 10, 10));
+
+        formulario.add(new JLabel("coeficiente a (x²):"));
+        formulario.add(campoA);
+        formulario.add(new JLabel("coeficiente b (x):"));
+        formulario.add(campoB);
+        formulario.add(new JLabel("coeficiente c:"));
+        formulario.add(campoC);
+
+        JButton btnFactorizar = new JButton("factorizar");
+        JButton btnGuardar = new JButton("guardar en Oracle");
+
+        formulario.add(btnFactorizar);
+        formulario.add(btnGuardar);
+
+        resultado.setEditable(false);
+        resultado.setLineWrap(true);
+        resultado.setWrapStyleWord(true);
+        resultado.setFont(new Font("Monospaced", Font.PLAIN, 14));  
 
     }
 }
