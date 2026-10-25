@@ -3,6 +3,7 @@
 
 <img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/16cc81d7-6573-4c38-904d-b94ca5dfa3f9" />  
 
+<img width="2556" height="1079" alt="image" src="https://github.com/user-attachments/assets/f179167c-beae-4d0c-8379-cffaa30bdcfc" />    
 ```
 
 Aplicación de escritorio con **Java 21**, **IntelliJ IDEA**, **Swing**, **Maven** y **JDBC para Oracle Database 19c**.
